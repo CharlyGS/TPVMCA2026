@@ -48,23 +48,21 @@ Este repositorio contiene los siguientes archivos comprimidos, que representan l
 ---
 # Diagrama Topologico de la Infraestructura
 
-+---------------------------+
-|      Máquina Física       |
-|   (PC de Carlos)          |
-|  IP: 192.168.0.X (Host)   |
-+-------------+-------------+
-              |
-              | (Adaptador Puente)
-              |
-+-------------+-------------+      +---------------------+      +-----------------+
-|      Máquina Virtual      |<---->|  Router/Gateway     |<---->|    Internet     |
-|         (TPServer)        |      | IP: 192.168.0.1     |      +-----------------+
-|---------------------------|      +---------------------+
-|      - Debian 11          |
-|      - IP: 192.168.0.10   |
-|      - Mask: 255.255.255.0|
-|      - GW: 192.168.0.1    |
-|      - SSH, Apache, MariaDB|
-+---------------------------+
-
-```
++--------------------------+
+|      Máquina Física      |
+|       (PC GRUPO 6)       |
+| IP: 192.168.100.83 (Host)|
++--------------------------+
+             |
+             | (Adaptador Puente)
+             |
++--------------------------+     +------------------+     +----------------+
+|     Máquina Virtual      |<--->|  Router/Gateway  |<--->|    Internet    |
+|        (TPServer)        |     | IP: 192.168.100.1|     +----------------+
+|--------------------------|     +------------------+
+|      - Debian 11         |
+|  - IP: 192.168.100.50    |
+| - Mask: 255.255.255.0    |
+|  - GW: 192.168.100.1     |
+| - SSH, Apache, MariaDB   |
++--------------------------+
